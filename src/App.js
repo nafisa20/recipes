@@ -59,14 +59,14 @@ function App() {
               alt="recipe"
             />
           </div>
-          <div>
+          <div className="recipe-info">
             <div>
               <h3>Ingredients</h3>
               {recipeData.ingredients.map((ingredient) => (
                 <p>{ingredient}</p>
               ))}
             </div>
-            <div>
+            <div className="method">
               <h3>Method</h3>
               {recipeData.instructions.map((instruction, index) => (
                 <p>
